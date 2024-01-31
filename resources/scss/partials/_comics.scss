@@ -38,11 +38,12 @@
 
         .wrapper {
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
+            gap: 2rem;
 
             .card {
                 width: calc(100% / 6 - 2rem);
-                margin-right: 2rem;
                 margin-bottom: 2rem;
 
                 img {
