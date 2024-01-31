@@ -74,3 +74,38 @@
         }
     }
 }
+
+.banner {
+    height: 150px;
+    background-color: $primary-color;
+
+    .container {
+        width: 1300px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        article {
+            margin-right: 3rem;
+            display: flex;
+            align-items: center;
+
+            img {
+                height: 60px;
+                margin-right: 1rem;
+            }
+
+            span {
+                font-size: 16px;
+                text-transform: uppercase;
+                color: white;
+            }
+
+            .visa {
+                height: 42px;
+            }
+        }
+    }
+}
