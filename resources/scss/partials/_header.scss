@@ -5,7 +5,7 @@ header {
     height: 110px;
 
     .wrapper {
-        width: 1200px;
+        width: 1400px;
         height: 100%;
         margin: 0 auto;
         display: flex;
@@ -35,7 +35,7 @@ header {
                     margin-right: 2rem;
                     text-transform: uppercase;
                     font-size: 16px;
-                    font-weight: 600;
+                    font-weight: 500;
                     color: #464646;
                     transition: color 0.3s ease;
 
@@ -49,16 +49,20 @@ header {
         .search {
             border-bottom: 2px solid $primary-color;
             display: flex;
+            padding-bottom: 0.1rem;
+            color: #464646;
 
             input {
                 width: 140px;
-                padding-left: 0.5rem;
+                height: 20px;
+                padding: 0 0.3rem;
                 margin-right: 0.2rem;
                 border: none;
 
                 &::placeholder {
                     text-align: end;
                     color: #464646;
+                    font-size: 15px;
                     font-weight: 600;
                 }
 
@@ -70,7 +74,7 @@ header {
             i {
                 display: flex;
                 align-items: center;
-                font-size: 16px;
+                font-size: 19px;
             }
         }
     }

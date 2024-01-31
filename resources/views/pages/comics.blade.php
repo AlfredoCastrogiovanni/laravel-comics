@@ -3,7 +3,24 @@
 @section('title', 'DC - Comics')
 
 @section('main-content')
-    <div class="hero">
+    <section class="hero">
         <img src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="jumbotron image">
-    </div>
+    </section>
+
+    <section class="comics">
+        <div class="container">
+            <span class="title">Current Series</span>
+            <div class="wrapper">
+                @foreach ($comics as $comic)
+                <div class="card">
+                    <img src="{{ $comic['thumb'] }}" alt="">
+                    <p>{{ $comic['series'] }}</p>
+                </div>
+                @endforeach
+            </div>
+            <div class="button-wrapper">
+                <button>Load More</button>
+            </div>
+        </div>
+    </section>
 @endsection
